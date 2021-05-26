@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Anton', sans-serif;
+  background-image:
+  radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+  background-size:100px 50px;;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+#container {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+  background-color: #34e7e4;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+button:focus {
+  outline: none;
+}
+
+
+
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #222f3e;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  height: 500px;
+  width: 400px;
+  grid-template-areas:
+    "display display display display"
+    "seven eight nine add"
+    "four five six subtract"
+    "one two three multiply"
+    "zero clear equal divide";
+}
+
+#display-area {
+  grid-area: display;
+  color: #f0932b;
+  font-size: 36px;
+  position: relative;
+  padding: 20px 10px;
+  text-align: right;
+  height: 70px;
+  width: 100%;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#add {
+  grid-area: add;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+#divide {
+  grid-area: divide;
+}
